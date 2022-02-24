@@ -36,8 +36,8 @@ public class RecapPractical {
 		
 		driver.findElement(By.cssSelector("input[id='email']")).sendKeys("wesselb@live.co.za");
 		driver.findElement(By.cssSelector("input[id='passwd']")).sendKeys("test1234");
-		driver.findElement(By.cssSelector("input[id='SubmitLogin']")).submit();
-		driver.findElement(By.cssSelector("input.error-copy"));
+		driver.findElement(By.cssSelector("button[id='SubmitLogin']")).submit();
+		System.out.println("Successfully Logged in...");
 		
 		//close
 		driver.close();
