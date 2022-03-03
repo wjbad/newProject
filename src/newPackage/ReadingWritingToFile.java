@@ -20,7 +20,7 @@ public class ReadingWritingToFile {
 		FC.createNewFile(); // Create file
 		
 		//Writing In to file
-		//Creating Object of java Filewriter and BufferedWriter class.
+		//Creating Object of java FileWriter and BufferedWriter class.
 		FileWriter FW = new FileWriter(testFile);
 		BufferedWriter BW = new BufferedWriter(FW);
 		BW.write("This Is The First Line."); //Writing In To File
