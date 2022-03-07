@@ -12,10 +12,12 @@ public class MethodifElse {
 //			System.out.println("Access granted you are old enough!");
 //		}
 		
-		static int checkAge(int age1, int age2) {
-			int z = return age1+age2;
+		static void checkAge(int age1, int age2) {
+			//return age1 + age2;
+			
+			int combinedAge = age1 + age2;
 			//if the again is less than 18, print "access denied"
-			if(z < 18) {
+			if(combinedAge < 18) {
 				System.out.println("Access Denied you are not old enough");
 			} else {
 				System.out.println("Access granted you are old enough!");
@@ -24,7 +26,7 @@ public class MethodifElse {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		checkAge(50, 1);
+		checkAge(11, 8);
 	}
 
 }
